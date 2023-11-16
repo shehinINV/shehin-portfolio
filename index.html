@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehin's Portfolio Website!</title>
+    <link rel=stylesheet href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span class="logo-color">S</span>HEHIN.</h1>
+            <!-- <img src="/images/" class=" "> -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav> 
+        <div id="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Shehin</span><br>from Kerala, India.</h1>
+        </div>
+    </div>
+</div> 
+
+<!--------------About---------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/images/About_me1.png">
+            </div>    
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I'm Shehin S, from Kerala, a state in India. I am an Electronics Engineering graduate and am a dedicated individual with a profound passion for technology, driven by a relentless curiosity to explore and innovate in the ever-evolving world of digital possibilities.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Machine Learning</span><br>Creating Machine Learning Models</li>
+                        <li><span>Web Development</span><br>Web App Development / Fullstack</li>
+                        <li><span>Embedded System</span><br>Embedded System Designs</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>Bachelor of Technology in ECE (B.Tech) - <small>70%</small><br>TKM College of Engineering, Kollam Kerala</li>
+                        <li><span>2016-2018</span><br>Higher Secondary - <small>90.41%</small><br>S.B.V.S Govt HSS Panmana Manayil, Kollam Kerala</li>
+                        <li><span>2015-2016</span><br>Secondary School Leaving Certificate (SSLC) - <small>98.79%</small><br>S.B.V.S Govt HSS Panmana Manayil, Kollam Kerala</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020-2022</span><br>National Service Scheme Volunteer</li>
+                        <li><span>2016-2017</span><br>District Science Fair Kerala</li>
+                        <li><span>2018-2023</span><br>Faculty in Mathematics & Physics (Higher Secondary)</li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>  
+
+<!--------------------------------------Services-------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Elevate your online presence with my bespoke web design services. I specialize in crafting visually compelling, user-centric websites tailored to your brand. Each project is a blend of creativity and functionality. Let's transform your digital vision into a captivating reality.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links')
+    var tabcontents = document.getElementsByClassName('tab-contents')
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }    
+
+</script>
+
+</body>
+</html>
