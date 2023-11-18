@@ -312,6 +312,7 @@ button {
     color: #fff;
     padding: 8px 5%;
     border-radius: 6px;
+    cursor: pointer;
 }
 .contact-right form{
     width: 100%;
