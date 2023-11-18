@@ -458,11 +458,11 @@ nav .fas{
     .contact-left p{
         display: flex;
     }
-    a.btn.btn2{
+    .a.btn.btn2{
         size: 10px;
         padding: 8px 5%;
         border-radius: 6px;
-        /* cursor: pointer; */
+        cursor: pointer;
     }
 
 }
