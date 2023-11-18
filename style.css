@@ -4,9 +4,12 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
-    background-color: #080808;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -84,6 +87,7 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: #ababab;
+    text-align: justify;
 }
 
 .row{
@@ -164,7 +168,305 @@ nav ul li a:hover::after{
 
 .services-list{
     display: grid;
-    grid-template-columns: auto(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.services-list div{
+    background-color: #262626;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 12px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-left: 40%;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-left: 20%;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* --------------------------------Photograph-------------------------------------------- */
+
+.photos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Ensure the button stays within the image */
+    position: relative;
+}
+.photos.nature, .photos.cultural, .photos.monuments {
+    border-radius: 10px;
+}
+
+.photo-list {
+    display: flex;
+    gap: 50px;
+    width: 95%;
+}
+
+.column {
+    flex: 1;
+}
+
+.column h2{
+    padding-left: 35%;
+    padding-bottom: 10px;   
+}
+/* .column h2:hover{
+    color: #ff004f;
+}  */
+
+.column:has(img:hover){
+    color: #ff004f;
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+img:hover{
+    scale: 1.1;
+    transition: 0.6s;
+}
+
+button {
+    position: absolute;
+    margin-top: 90%; /* Push the button to the bottom */
+    margin-left: 85%; /* Align the button to the right */
+    padding: 10px;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------Contact--------------------------------------------- */
+
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+
+}
+.contact-left p{
+    margin: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ababab;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 30px;
+    display: inline-block;
+    color: #ababab;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #ff004f;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 5%;
+    border-radius: 6px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form.btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.thankyou{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.thankyou i{
+    color:#db1654;
+    width: 40px;
+}
+
+/* -------------------------css for small screens-------------------------------- */
+
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+     #header{
+        background-image: url(/images/shehin_bg_phone.png);
+        margin-top: 40px;
+        background-position: bottom right;
+        background-size: 70%;
+        height: 70vh;
+     }
+     #header-text{
+        margin-top: 10%;
+        font-size: 15px;
+     }
+     #header-text h1{
+        font-size: 30px;
+/* ------------------------------------------------------------------ */
+
+     }
+     #about{
+        padding-top: 0;
+     }
+     .photo-list, .photo-list.column img{
+        flex-basis: 100%;   
+        display: block; 
+        width: 70%;
+        height: auto;
+        padding-left: 50px;
+     }
+     .photo-list h2{
+        padding: 15px 30px;
+     }
+
+
+
+     /* ----------------------------------------------------------------- */ 
+
+     nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px; 
+        z-index: 2; 
+        transition: right 0.5s;
+        border-radius: 7px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul  .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+        display: block;
+
+    }
+    .thankyou{
+        font-size: 14px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left, .contact-right{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .column{
+        text-align: center;
+    }
+    .about-col-1 img{
+        margin-left: 40px;
+        width: 60%;
+    }
+    .contact-left p{
+        display: flex;
+    }
+    a.btn.btn2{
+        size: 10px;
+        padding: 8px 5%;
+        border-radius: 6px;
+        /* cursor: pointer; */
+    }
+
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }

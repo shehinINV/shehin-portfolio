@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shehin's Portfolio Website!</title>
     <link rel=stylesheet href="style.css">
+    <script src="https://kit.fontawesome.com/108341de90.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -12,13 +13,15 @@
         <nav>
             <h1 class="logo"><span class="logo-color">S</span>HEHIN.</h1>
             <!-- <img src="/images/" class=" "> -->
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#photograph">Photographs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav> 
         <div id="header-text">
             <p>Web Developer</p>
@@ -33,7 +36,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="/images/About_me1.png">
+                <img src="/images/About_me3.png">
             </div>    
             <div class="about-col-2">
                 <h1 class="subtitle">About Me</h1>
@@ -72,16 +75,111 @@
 <!--------------------------------------Services-------------------------------------->
 <div id="services">
     <div class="container">
-        <h1 class="subtitle">Services</h1>
+        <h1 class="subtitle">My Services</h1>
         <div class="services-list">
             <div>
+                <i class="fa-solid fa-code fa-fade fa-2xl"></i>
                 <h2>Web Design</h2>
-                <p>Elevate your online presence with my bespoke web design services. I specialize in crafting visually compelling, user-centric websites tailored to your brand. Each project is a blend of creativity and functionality. Let's transform your digital vision into a captivating reality.</p>
+                <p>Elevate your online presence with my bespoke web design services. I specialize in crafting visually compelling, user-centric websites tailored to your brand. Each project is a blend of creativity and functionality. Just make a revolution through your ideas. Let's transform your digital vision into a captivating reality.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-camera-retro fa-beat-fade fa-2xl"></i>
+                <h2>Photograpy</h2>
+                <p>Capture life's moments beautifully with our professional photography services, where artistry meets expertise to transform your memories into timeless visual stories. Whether it's weddings, portraits, events. we specialize in crafting stunning images that evoke emotion and leave a lasting impression.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-desktop fa-fade fa-2xl"></i>
+                <h2>ML Models</h2>
+                <p>Elevate your business with cutting-edge Machine Learning models tailored to your unique needs. Our services encompass the entire ML lifecycle, from data preparation to model deployment. Whether you're seeking predictive analytics, image recognition, or custom solutions.</p>
+                <a href="#">Learn more</a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- ---------------------------------------------Photograph-------------------------------------------------- -->
+<div id="photograph">
+    <div class="container">
+        <h1 class="subtitle">My Photographs</h1>
+        <div class="photo-list">
+            <div class="column">
+                <h2>Nature</h2>
+                <div class="photos nature">
+                    <img src="/images/Nature/nature6.jpg" alt="Nature 6">
+                    <img src="/images/Nature/nature1.jpg" alt="Nature 1">
+                    <img src="/images/Nature/nature3.jpg" alt="Nature 3">
+                    <img src="/images/Nature/nature4.jpg" alt="Nature 4">
+                    <img src="/images/Nature/nature5.jpg" alt="Nature 5">
+                    <img src="/images/Nature/nature2.jpg" alt="Nature 2">
+                    <button onclick="changeSlide('nature')">
+                        <i class="fa-solid fa-angle-right fa-fade fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="column">
+                <h2>Cultural</h2>
+                <div class="photos cultural">
+                    <img src="/images/culturals/cultural3.jpg" alt="Cultural 3">
+                    <img src="/images/culturals/cultural2.jpg" alt="Cultural 2">
+                    <img src="/images/culturals/cultural1.jpg" alt="Cultural 1">
+                    <img src="/images/culturals/cultural4.jpg" alt="Cultural 4">
+                    <!-- <button class='prev' onclick="changeSlide('cultural', 'prev')">
+                        <i class="fas fa-angle-left fa-2x"></i>
+                    </button> -->
+                    <button onclick="changeSlide('cultural')">
+                        <i class="fa-solid fa-angle-right fa-fade fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="column">
+                <h2>Monuments</h2>
+                <div class="photos monuments">
+                    <img src="/images/monuments/palace1.jpg" alt="Monuments 3">
+                    <img src="/images/monuments/college.jpg" alt="Monuments 4">
+                    <img src="/images/monuments/tajmahal.jpg" alt="Monuments 1">
+                    <img src="/images/monuments/museum.jpg" alt="Monuments 2">
+                    <button onclick="changeSlide('monuments')">
+                        <i class="fa-solid fa-angle-right fa-fade fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------------------Contact------------------------------------------------ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shehinsharaf09@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i></i>+91 8589076268</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/shehin_s_h/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://m.facebook.com/profile.php/?id=100006933851828" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/shehin-s-161357284/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCEA-UquDCqha3q7A2iyQn_Q" target="_blank"><i class="fa-brands fa-youtube"></i></i></a>
+                </div>
+                <a href="/Shehin S_Resume_New.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button1 type="submit" class="btn btn2">Submit</button1>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="thankyou">
+    <p>Thank You !!!<i class="fa-solid fa-heart fa-bounce"></i></p>
+    </div>
+</div>
 <script>
     var tablinks = document.getElementsByClassName('tab-links')
     var tabcontents = document.getElementsByClassName('tab-contents')
@@ -97,6 +195,37 @@
     }    
 
 </script>
+<script src="script.js"></script>
+
+<script>
+    var menu=document.getElementById('sidemenu');
+
+    function openmenu(){
+        menu.style.right="0";
+    }
+    function closemenu(){
+        menu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6BHbTdi5FWg19dGP0MFQb-n5WcE4xZD2w_U2FBQYWQc15fAQg_TIr3suoQ-PuPsSIGA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 </html>
