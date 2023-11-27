@@ -3,10 +3,24 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    font-family: 'Disposable Droid BB +3', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
+
+
+/* @font-face {
+  font-family: 'Disposable Droid BB +3';
+  src: url('./fonts/DisposableDroidBB_bld.ttf') 
+} */
+
+/* #header {
+  font-family: 'Disposable Droid BB +3', sans-serif;
+
+} */
+
+
 
 body{
     background-color: #000000;
@@ -216,6 +230,7 @@ nav ul li a:hover::after{
     font-weight: 500;
     margin-bottom: 15px;
     margin-left: 20%;
+    /* font-family: 'Disposable Droid BB +3', sans-serif; */
 }
 
 .services-list div a{
@@ -280,7 +295,7 @@ img:hover{
     transition: 0.6s;
 }
 
-button {
+.next {
     position: absolute;
     margin-top: 90%; /* Push the button to the bottom */
     margin-left: 85%; /* Align the button to the right */
@@ -330,6 +345,18 @@ button {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 20px;
+    background: #ff004f;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 5%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-button{
+     display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 50px;
     background: #ff004f;
     text-decoration: none;
     color: #fff;
