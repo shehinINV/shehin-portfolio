@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehins-works</title>
+    <link rel=stylesheet href="style.css">
+    <script src="https://kit.fontawesome.com/108341de90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="work">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span class="logo-color">S</span>HEHIN.</h1>
+                <h1 class="logo"><span class="logo-color"></span></h1>
+                <ul id="sidemenu">
+                    <li><a href="index.html#">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#photograph">Photographs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav> 
+
+        </div>
+    </div> 
+    
+
+<div id="my-works">
+    <div class="container">
+        <h1 class="subtitle">My Web Designs</h1>
+        <div class="work-list">
+            <div>
+                <h2>Weather-App</h2>
+                <p>Experience real-time weather updates with our <span class="highlight">React-based</span> 'Weather App', providing detailed information on humidity, temperature, and wind speed for any location you search, ensuring you stay informed about the current weather conditions effortlessly.</p>
+                <a href="https://shehins-weather-app.vercel.app" target="_blank">Go to the site...</a>
+            </div>
+            <div>
+                <h2>Portfolio Website</h2>
+                <p>Explore my portfolio website crafted with <span class="highlight">HTML, CSS, and JavaScript</span>, showcasing a dynamic blend of creativity and technical expertise, offering a glimpse into my skills, projects, and passion for web development.</p>
+                <a href="https://shehin-portfolio.vercel.app" target="_blank">Go to the site...</a>
+            </div>
+            <div>
+                <h2>E-Commerce Website</h2>
+                <p>Dive into the world of seamless online shopping with our <span class="highlight">ReactJS-powered</span> e-commerce website. Experience a user-friendly interface, dynamic product displays, and a secure checkout process that redefine your online shopping journey.</p>
+                <a href="https://my-e-commerce-app.vercel.app" target="_blank">Go to the site... </a>
+            </div>
+        </div>
+        <div class="work-image">
+            <div>
+                <a href="https://shehins-weather-app.vercel.app" class="site" target="_blank">
+                    <img src="./images/my works/weather-app.png" alt="weather-app.png">
+                </a>
+            </div>
+            <div>
+                <a href="https://shehin-portfolio.vercel.app" class="site" target="_blank">
+                    <img src="./images/my works/portfolio.png" alt="e-commerce-web.png">
+                </a>
+            </div>
+            <div>
+                <a href="https://my-e-commerce-app.vercel.app" class="site" target="_blank">
+                    <img src="./images/my works/e-commerce.png" alt="e-commerce-web.png">
+                </a>    
+            </div>
+        </div>
+    </div>
+    <div class="thankyou">
+        <p>Thank You !!!<i class="fa-solid fa-heart fa-bounce"></i></p>
+    </div>
+
+</div>
+<script>
+    var menu=document.getElementById('sidemenu');
+
+    function openmenu(){
+        menu.style.right="0";
+    }
+    function closemenu(){
+        menu.style.right="-200px";
+    }
+</script>   
+    
+</body>
+</html>
