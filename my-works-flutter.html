@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehins-works</title>
+    <link rel=stylesheet href="style.css">
+    <script src="https://kit.fontawesome.com/108341de90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="work">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span class="logo-color">S</span>HEHIN.</h1>
+                <h1 class="logo"><span class="logo-color"></span></h1>
+                <ul id="sidemenu">
+                    <li><a href="index.html#">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#photograph">Photographs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <div id="my-works">
+        <div class="container">
+            <h1 class="subtitle">My Mobile Apps</h1>
+            <div class="work-list">
+                <div>
+                    <h2>Money Manager</h2>
+                    <p>Effortlessly track your finances with "Money Manager," our <span class="highlight">Flutter</span>-based mobile app for recording income and expenses on
+                    the go. Stay in control of your money with ease and simplicity.</p>
+                    <a href="#" target="_blank">Go to the site...</a>
+                </div>
+                <div>
+                    <h2>Ticket Book App   </h2>
+                    <p>Discover "Ticket Book," our <span class="highlight">Flutter</span>-powered mobile app for hassle-free flight ticket bookings, featuring comprehensive
+                    details on previous and upcoming flights, including departure, arrival, and hotel accommodations. Simplify your travel
+                    experience with ease and efficiency.</p>
+                    <a href="#" target="_blank">Go to the site...</a>
+                </div>
+                <div>
+                    <h2>Spotify-Clone</h2>
+                    <p>Immerse yourself in the world of music with our <span class="highlight">Flutter</span>-powered "Spotify-clone" app. Enjoy a seamless music streaming
+                    experience with a sleek interface, personalized playlists, and offline listening capabilities, bringing the joy of music
+                    to your fingertips.</p>
+                    <a href="https://my-e-commerce-app.vercel.app" target="_blank">Go to the site... </a>
+                </div>
+            </div>
+            <div class="work-image">
+                <div>
+                    <a href="https://shehins-weather-app.vercel.app" class="site" target="_blank">
+                        <img src="./images/my works/money-manager.png" alt="weather-app.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://shehin-portfolio.vercel.app" class="site" target="_blank">
+                        <img src="./images/my works/ticket-book.png" alt="e-commerce-web.png">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://my-e-commerce-app.vercel.app" class="site" target="_blank">
+                        <img src="./images/my works/spotify-clone.png" alt="e-commerce-web.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="thankyou">
+            <p>Thank You !!!<i class="fa-solid fa-heart fa-bounce"></i></p>
+        </div>
+
+    </div>
+    <script>
+        var menu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            menu.style.right = "0";
+        }
+        function closemenu() {
+            menu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
