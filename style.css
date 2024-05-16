@@ -460,7 +460,12 @@ form.btn2{
     font-style: italic;
     font-weight: bold;
 }
-
+.work-list div i {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-left: 40%;
+    align-items: center;
+}
 
 
 /* -------------------------css for small screens-------------------------------- */
